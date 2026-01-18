@@ -1,3 +1,360 @@
----
-layout: front
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jules PIGNÉ</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img src="./assets/jpeg/pdp3.jpg" alt="Jules Pigné" class="header__logo-img" />
+          </div>
+          <span class="header__logo-sub">Jules PIGNÉ</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link">Accueil</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./projets.html" class="header__link">Projets</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./competences.html" class="header__link">Compétences</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./loisirs.html" class="header__link">Loisirs</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link">Contact</a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img src="./assets/svg/ham-menu.svg" alt="menu" class="header__main-ham-menu" />
+            <img src="./assets/svg/ham-menu-close.svg" alt="fermer" class="header__main-ham-menu-close d-none" />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link"><a href="./index.html">Accueil</a></li>
+            <li class="header__sm-menu-link"><a href="./projets.html">Projets</a></li>
+            <li class="header__sm-menu-link"><a href="./competences.html">Compétences</a></li>
+            <li class="header__sm-menu-link"><a href="./loisirs.html">Loisirs</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Bonjour, je suis Jules Pigné !</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Venez me découvrir à travers mes projets, mes expériences, mes passions... 
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./projets.html" class="btn btn--bg">Projets</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/jules-pign%C3%A9-5448021a9/" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/JohnPingu" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://x.com/PigneJules" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://www.instagram.com/jules.pigne.9/"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">A propos de moi</span>
+          <span class="heading-sec__sub">
+            Actuellement en 3ème année de BUT Informatique, je recherhce un stage en réalisation d'applicaton ou de site web.
+            J'ai 25 ans, j'habite Annecy pour les études mais je suis également mobile à Angers et ses alentours.
+            Sur mon temps libre, je travaille sur un projet personnel de jeu de rôle impliquant un site web et un bot Discord. J'aime les jeux vidéo, lire des romans ou des webtoons, le sport et les cartes à collectionner.
+          </span>
+        </h2>
+        <span class="heading-sec__main">Expériences</span>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Professionnelles</h3>
+            <div>
+              <h4 class="about__content-sub-title">SOGAL : 04/2025 -> 07/2025</h4>
+              <h5 class="about__content-pre-desc">Stagiaire développeur web. la Jumellière, France</h5>
+              <span class="about__content-desc">Je préparait un rapport PowerBI reprenant les données du site <a href="https://centimetre.com">centimetre.com</a> avant sa migration. J'aidait également au développement du site <a href="https://quadro.fr">quadro.fr</a></span>
+            </div>
+            <div>
+              <h4 class="about__content-sub-title">Helpline : 09/2022 -> 08/2023</h4>
+              <h5 class="about__content-pre-desc">Technicien helpdesk. Angers, France</h5>
+              <span class="about__content-desc">J'assistait à distance les collaborateurs du Crédit Agricole (Credit and Investment Bank) dans la résolution de leur problèmes informatiques en France, Suisse, Belgique, Allemagne, Luxembourg, Portugal et UBAF. </span>
+            </div>
+            <div>
+              <h4 class="about__content-sub-title">Net'Ouest : 2021 -> 2022</h4>
+              <h5 class="about__content-pre-desc">Agent d'entretien. Angers, France</h5>
+              <span class="about__content-desc">Je procédais à un nettoyage industriel de bâtiments avant livraison et à l'entretien de magasins grande surface avant la réception de clients.</span>
+            </div>
+            <div>
+              <h4 class="about__content-sub-title">Musées d'Angers : 2019 -> 2021</h4>
+              <h5 class="about__content-pre-desc">Agent d'accueil et de surveillance. Angers, France</h5>
+              <span class="about__content-desc">Je devais procéder à l'ouverture et à la fermeture des salles, assister les visiteurs, veiller au respect des règles et à l'intégrité des oeuvres.</span>
+            </div>
+          </div>
+          <div class="about__content-main">
+            <h3 class="about__content-title">Diplômes</h3>
+            <div>
+              <h4 class="about__content-sub-title">IUT Annecy-le-Vieux : Septembre 2023 -> Aujourd'hui</h4>
+              <h5 class="about__content-pre-desc">BUT INFO</h5>
+              <span class="about__content-desc">Spécialisation dans la réalisation d'application, 3eme année en cours</span>
+            </div>
+            <div>
+              <h4 class="about__content-sub-title">UCO Angers : Septembre 2021 -> Juillet 2022</h4>
+              <h5 class="about__content-pre-desc">Licence en Histoire de l'Art</h5>
+              <span class="about__content-desc">Spécialisation en journalisme, obtenue avec mention</span>
+            </div>
+            <div>
+              <h4 class="about__content-sub-title">UCO Angers : Septembre 2018 -> Juillet 2021</h4>
+              <h5 class="about__content-pre-desc">Licence en Histoire</h5>
+              <span class="about__content-desc">Spécialisation en Histoire de l'Art, obtenue avec mention</span>
+            </div>
+          </div>
+          <div class="about__content-main">
+            <h3 class="about__content-title">Apprenez à me connaître !</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Si vous ne trouvez pas l'information que vous cherchez ici, elle est peut-être dans mon CV !
+                👇
+              </p>
+            </div>
+            <a href="./assets/pdf/RESUME_Jules.pdf" class="btn btn--med btn--theme dynamicBgClr"
+              >Mon CV</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">Mes compétences</h3>
+            <a href="./competences.html" class="btn btn--med btn--theme dynamicBgClr"
+              >C'est par ici que ça ce passe !</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projets</span>
+          <span class="heading-sec__sub-clear">
+            Un petit panel des projets que j'ai mené en tant qu'étudiant.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/surgerunner2048.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">SurgeRunner 2048</h3>
+              <p class="projects__row-content-desc">
+                Un jeu en WPF inspiré de Vampire Survivor, sur le thème Cyberpunk.
+              </p>
+              <a
+                href="https://github.com/JohnPingu/SurgeRunner2048"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Github Link</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/dortan.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">L.U.C.R.A.T.I.F</h3>
+              <p class="projects__row-content-desc">
+                Projet d'application Windows dans lequel nous imaginons un ERP pour la ville de Dortan.
+              </p>
+              <a
+                href="https://github.com/thibaudcot/SAE2.01"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Github Link</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/uber.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Clone d'Uber</h3>
+              <p class="projects__row-content-desc">
+                Projet lors duquel nous devions copier un site internet existant.
+              </p>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/resonance.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">"Quand les joueurs soufflent le show"</h3>
+              <p class="projects__row-content-desc">
+                Article about physical events in E-Sport redacted in french, and implemented into a wordpress website.
+              </p>
+              <a
+                href="https://resonance-angers.fr/quand-les-joueurs-soufflent-le-show/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Read me !</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            <ul>
+              <li>Mail : pigne.jules@gmail.com</li>
+              <li>Mobile : +336.27.02.31.36</li>
+              <li><a href="https://www.linkedin.com/in/jules-pign%C3%A9-5448021a9/">LinkedIn</a></li>
+              <li><a href="https://x.com/PigneJules">Twitter / X</a></li>
+            </ul>
+          </span>
+        </h2>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jules-pign%C3%A9-5448021a9/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/JohnPingu">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://x.com/PigneJules">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/jules.pigne.9/">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Jules Pigné</h4>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
