@@ -36,3 +36,16 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+function toggleProject(btn, projectId) {
+        const details = document.getElementById(projectId + '-details');
+        const isExpanded = details.classList.contains('expanded');
+        
+        if (isExpanded) {
+          details.classList.remove('expanded');
+          btn.textContent = 'Voir les détails';
+        } else {
+          details.classList.add('expanded');
+          btn.textContent = 'Masquer les détails';
+        }
+      }

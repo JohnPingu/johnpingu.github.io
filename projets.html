@@ -10,61 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
-    <style>
-      .project-expand-btn {
-        display: inline-block;
-        margin-top: 1.5rem;
-        padding: 0.8rem 1.5rem;
-        background: transparent;
-        border: 2px solid #7f00ff;
-        color: #7f00ff;
-        cursor: pointer;
-        font-size: 1.4rem;
-        font-weight: 600;
-        transition: all 0.3s;
-        border-radius: 4px;
-      }
-      .project-expand-btn:hover {
-        background: #7f00ff;
-        color: #fff;
-      }
-      .project-details {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease;
-      }
-      .project-details.expanded {
-        max-height: 2000px;
-      }
-      .project-details-content {
-        padding-top: 2rem;
-        border-top: 1px solid #ddd;
-        margin-top: 2rem;
-      }
-      .ac-section {
-        margin-top: 2rem;
-      }
-      .ac-section h4 {
-        color: #7f00ff;
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
-      }
-      .ac-list {
-        list-style: none;
-        padding-left: 0;
-      }
-      .ac-list li {
-        padding: 0.5rem 0;
-        padding-left: 2rem;
-        position: relative;
-      }
-      .ac-list li:before {
-        content: "→";
-        position: absolute;
-        left: 0;
-        color: #7f00ff;
-      }
-    </style>
   </head>
   <body>
     <header class="header">
@@ -153,6 +98,7 @@
                     <ul class="ac-list">
                       <li><strong>AC11.01</strong> - Implémenter des conceptions simples</li>
                       <li><strong>AC11.04</strong> - Développer des interfaces utilisateurs</li>
+                      <li><strong>AC12.01</strong> - Analyser un problème avec méthode</li>
                       <li><strong>AC21.03</strong> - Adopter de bonnes pratiques de conception et de programmation</li>
                       <li><strong>AC16.03</strong> - Identifier les statuts, fonctions et rôles</li>
                       <li><strong>AC16.04</strong> - Acquérir les compétences interpersonnelles</li>
@@ -195,6 +141,7 @@
                       <li><strong>AC14.02</strong> - Visualiser des données</li>
                       <li><strong>AC14.03</strong> - Concevoir une base de données relationnelle à partir d'un cahier des charges</li>
                       <li><strong>AC15.01</strong> - Appréhender les besoins du client et de l'utilisateur</li>
+                      <li><strong>AC22.01</strong> - Choisir des structures de données complexes adaptées</li>
                       <li><strong>AC26.02</strong> - Appliquer une démarche pour intégrer une équipe</li>
                       <li><strong>AC26.03</strong> - Mobiliser les compétences interpersonnelles</li>
                     </ul>
@@ -245,7 +192,54 @@
             </div>
           </div>
 
-          <!-- Projet 4: Article E-Sport -->
+          <!-- Projet 4: Clothes2U -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/jpeg/clothes2u.jpg" alt="Clothes2U" class="projects__row-img" loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Clothes2U</h3>
+              <p class="projects__row-content-desc">
+                Site internet complet inspiré de Vinted. Le back est réalisé en C#, le front en Blazor (C# également). La base de données est en PostgreSQL, et les API IA en Python. Le tout est déployé sur Azure.
+              </p>
+              <button class="project-expand-btn" onclick="toggleProject(this, 'clothes2u')">Voir les détails</button>
+              
+              <div class="project-details" id="clothes2u-details">
+                <div class="project-details-content">
+                  <p class="projects__row-content-desc">
+                    <strong>Technologies utilisées :</strong> C#, Blazor, PostgreSQL, Python, Azure
+                  </p>
+                  <p class="projects__row-content-desc">
+                    <strong>Apprentissages :</strong> Bonnes pratiques de code, architecture microservices, services externes, applications communicantes, déploiement cloud
+                  </p>
+                  
+                  <div class="ac-section">
+                    <h4>Apprentissages Critiques validés :</h4>
+                    <ul class="ac-list">
+                      <li><strong>AC21.01</strong> - Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles</li>
+                      <li><strong>AC21.02</strong> - Appliquer des principes d'accessibilité et d'ergonomie</li>
+                      <li><strong>AC21.03</strong> - Adopter de bonnes pratiques de conception et de programmation</li>
+                      <li><strong>AC31.01</strong> - Choisir et implémenter les architectures adaptées</li>
+                      <li><strong>AC31.03</strong> - Intégrer des solutions dans un environnement de production</li>
+                      <li><strong>AC22.03</strong> - Comprendre les enjeux et moyens de sécurisation des données</li>
+                      <li><strong>AC23.01</strong> - Concevoir et développer des applications communicantes</li>
+                      <li><strong>AC23.02</strong> - Utiliser des serveurs et des services réseaux virtualisés</li>
+                      <li><strong>AC23.03</strong> - Sécuriser les services et données d'un système</li>
+                      <li><strong>AC24.01</strong> - Optimiser les modèles de données de l'entreprise</li>
+                      <li><strong>AC24.02</strong> - Assurer la sécurité des données (intégrité et confidentialité)</li>
+                      <li><strong>AC32.03</strong> - Choisir et utiliser des bibliothèques dédiées</li>
+                    </ul>
+                  </div>
+                  
+                  <p class="projects__row-content-desc" style="margin-top: 2rem; font-style: italic;">
+                    <strong>Note :</strong> Projet en cours de développement - lien à venir
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 5: Article E-Sport -->
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img src="./assets/jpeg/resonance.jpeg" alt="Article E-Sport" class="projects__row-img" loading="lazy" />
@@ -325,19 +319,5 @@
     </footer>
 
     <script src="./index.js"></script>
-    <script>
-      function toggleProject(btn, projectId) {
-        const details = document.getElementById(projectId + '-details');
-        const isExpanded = details.classList.contains('expanded');
-        
-        if (isExpanded) {
-          details.classList.remove('expanded');
-          btn.textContent = 'Voir les détails';
-        } else {
-          details.classList.add('expanded');
-          btn.textContent = 'Masquer les détails';
-        }
-      }
-    </script>
   </body>
 </html>
