@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projets - Jules PIGNÉ</title>
+    <meta name="description" content="Portfolio de Jules Pigné - Mes Projets" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <style>
+      .project-expand-btn {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.8rem 1.5rem;
+        background: transparent;
+        border: 2px solid #7f00ff;
+        color: #7f00ff;
+        cursor: pointer;
+        font-size: 1.4rem;
+        font-weight: 600;
+        transition: all 0.3s;
+        border-radius: 4px;
+      }
+      .project-expand-btn:hover {
+        background: #7f00ff;
+        color: #fff;
+      }
+      .project-details {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+      }
+      .project-details.expanded {
+        max-height: 2000px;
+      }
+      .project-details-content {
+        padding-top: 2rem;
+        border-top: 1px solid #ddd;
+        margin-top: 2rem;
+      }
+      .ac-section {
+        margin-top: 2rem;
+      }
+      .ac-section h4 {
+        color: #7f00ff;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+      }
+      .ac-list {
+        list-style: none;
+        padding-left: 0;
+      }
+      .ac-list li {
+        padding: 0.5rem 0;
+        padding-left: 2rem;
+        position: relative;
+      }
+      .ac-list li:before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: #7f00ff;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img src="./assets/jpeg/pdp3.jpg" alt="Jules Pigné" class="header__logo-img" />
+          </div>
+          <span class="header__logo-sub">Jules PIGNÉ</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link">Accueil</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./projets.html" class="header__link">Projets</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./competences.html" class="header__link">Compétences</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./loisirs.html" class="header__link">Loisirs</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link">Contact</a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img src="./assets/svg/ham-menu.svg" alt="menu" class="header__main-ham-menu" />
+            <img src="./assets/svg/ham-menu-close.svg" alt="fermer" class="header__main-ham-menu-close d-none" />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link"><a href="./index.html">Accueil</a></li>
+            <li class="header__sm-menu-link"><a href="./projets.html">Projets</a></li>
+            <li class="header__sm-menu-link"><a href="./competences.html">Compétences</a></li>
+            <li class="header__sm-menu-link"><a href="./loisirs.html">Loisirs</a></li>
+            <li class="header__sm-menu-link"><a href="./index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Mes Projets</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Découvrez les différents projets que j'ai réalisés durant mon parcours étudiant et professionnel
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects sec-pad">
+      <div class="main-container">
+        <div class="projects__content">
+          <!-- Projet 1: SurgeRunner 2048 -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/jpeg/surgerunner2048.jpeg" alt="SurgeRunner 2048" class="projects__row-img" loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">SurgeRunner 2048</h3>
+              <p class="projects__row-content-desc">
+                Un jeu développé en WPF (Windows Presentation Foundation) inspiré du célèbre Vampire Survivor, mais dans un univers Cyberpunk futuriste. 
+                Le joueur doit survivre à des vagues d'ennemis en améliorant progressivement ses capacités.
+              </p>
+              <button class="project-expand-btn" onclick="toggleProject(this, 'surge')">Voir les détails</button>
+              
+              <div class="project-details" id="surge-details">
+                <div class="project-details-content">
+                  <p class="projects__row-content-desc">
+                    <strong>Technologies utilisées :</strong> C#, WPF, XAML
+                  </p>
+                  <p class="projects__row-content-desc">
+                    <strong>Défis relevés :</strong> Gestion des animations fluides, système de progression du personnage, équilibrage du gameplay, gestion du rush : deux semaines de développement pour 2 développeurs
+                  </p>
+                  
+                  <div class="ac-section">
+                    <h4>Apprentissages Critiques validés :</h4>
+                    <ul class="ac-list">
+                      <li><strong>AC11.01</strong> - Implémenter des conceptions simples</li>
+                      <li><strong>AC11.04</strong> - Développer des interfaces utilisateurs</li>
+                      <li><strong>AC21.03</strong> - Adopter de bonnes pratiques de conception et de programmation</li>
+                      <li><strong>AC16.03</strong> - Identifier les statuts, fonctions et rôles</li>
+                      <li><strong>AC16.04</strong> - Acquérir les compétences interpersonnelles</li>
+                    </ul>
+                  </div>
+                  
+                  <a href="https://github.com/JohnPingu/SurgeRunner2048" class="btn btn--med btn--theme dynamicBgClr" target="_blank" style="margin-top: 2rem;">Voir sur Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2: L.U.C.R.A.T.I.F (Dortan) -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/jpeg/dortan.jpeg" alt="L.U.C.R.A.T.I.F" class="projects__row-img" loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">L.U.C.R.A.T.I.F</h3>
+              <p class="projects__row-content-desc">
+                Projet d'application Windows dans lequel nous avons imaginé et développé un ERP (Enterprise Resource Planning) complet pour la ville de Dortan. 
+                L'application permet de gérer les ressources municipales, les plannings et les budgets.
+              </p>
+              <button class="project-expand-btn" onclick="toggleProject(this, 'dortan')">Voir les détails</button>
+              
+              <div class="project-details" id="dortan-details">
+                <div class="project-details-content">
+                  <p class="projects__row-content-desc">
+                    <strong>Technologies utilisées :</strong> C#, WPF, SQL Server
+                  </p>
+                  <p class="projects__row-content-desc">
+                    <strong>Travail d'équipe :</strong> Collaboration avec 2 autres développeurs, utilisation de Git pour le versioning
+                  </p>
+                  
+                  <div class="ac-section">
+                    <h4>Apprentissages Critiques validés :</h4>
+                    <ul class="ac-list">
+                      <li><strong>AC11.02</strong> - Élaborer des conceptions simples</li>
+                      <li><strong>AC14.01</strong> - Mettre à jour et interroger une base de données relationnelle</li>
+                      <li><strong>AC14.02</strong> - Visualiser des données</li>
+                      <li><strong>AC14.03</strong> - Concevoir une base de données relationnelle à partir d'un cahier des charges</li>
+                      <li><strong>AC15.01</strong> - Appréhender les besoins du client et de l'utilisateur</li>
+                      <li><strong>AC26.02</strong> - Appliquer une démarche pour intégrer une équipe</li>
+                      <li><strong>AC26.03</strong> - Mobiliser les compétences interpersonnelles</li>
+                    </ul>
+                  </div>
+                  
+                  <a href="https://github.com/thibaudcot/SAE2.01" class="btn btn--med btn--theme dynamicBgClr" target="_blank" style="margin-top: 2rem;">Voir sur Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3: Quadro -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/jpeg/Quadro.jpeg" alt="Quadro" class="projects__row-img" loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Quadro</h3>
+              <p class="projects__row-content-desc">
+                Refonte complète de la page de recherche de magasin du site Quadro. La carte et la liste des magasins s'actualisent en temps réel, avec des animations et autres chargements en JS.
+              </p>
+              <button class="project-expand-btn" onclick="toggleProject(this, 'quadro')">Voir les détails</button>
+              
+              <div class="project-details" id="quadro-details">
+                <div class="project-details-content">
+                  <p class="projects__row-content-desc">
+                    <strong>Technologies utilisées :</strong> HTML5, CSS3, JavaScript, PHP (Symfony)
+                  </p>
+                  <p class="projects__row-content-desc">
+                    <strong>Apprentissages :</strong> Responsive design, animations CSS, intégration d'API de cartographie, rechargement partiel de pages
+                  </p>
+                  
+                  <div class="ac-section">
+                    <h4>Apprentissages Critiques validés :</h4>
+                    <ul class="ac-list">
+                      <li><strong>AC21.01</strong> - Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles</li>
+                      <li><strong>AC21.02</strong> - Appliquer des principes d'accessibilité et d'ergonomie</li>
+                      <li><strong>AC31.02</strong> - Faire évoluer une application existante</li>
+                      <li><strong>AC31.03</strong> - Intégrer des solutions dans un environnement de production</li>
+                      <li><strong>AC23.01</strong> - Concevoir et développer des applications communicantes</li>
+                      <li><strong>AC32.03</strong> - Choisir et utiliser des bibliothèques dédiées</li>
+                    </ul>
+                  </div>
+                  
+                  <a href="https://www.quadro.fr/fr/magasins" class="btn btn--med btn--theme dynamicBgClr" target="_blank" style="margin-top: 2rem;">Voir en ligne</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 4: Article E-Sport -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="./assets/jpeg/resonance.jpeg" alt="Article E-Sport" class="projects__row-img" loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">"Quand les joueurs soufflent le show"</h3>
+              <p class="projects__row-content-desc">
+                Article journalistique rédigé en français sur les événements physiques dans l'E-Sport, explorant l'impact et l'importance 
+                des rencontres en personne dans un univers majoritairement digital. L'article a été publié sur le site Wordpress de Résonance Angers.
+              </p>
+              <button class="project-expand-btn" onclick="toggleProject(this, 'esport')">Voir les détails</button>
+              
+              <div class="project-details" id="esport-details">
+                <div class="project-details-content">
+                  <p class="projects__row-content-desc">
+                    <strong>Compétences :</strong> Rédaction journalistique, recherche documentaire, publication web, SEO
+                  </p>
+                  <p class="projects__row-content-desc">
+                    <strong>Contexte :</strong> Projet réalisé durant ma licence en Histoire de l'Art avec spécialisation journalisme
+                  </p>
+                  
+                  <div class="ac-section">
+                    <h4>Compétences développées :</h4>
+                    <ul class="ac-list">
+                      <li>Recherche et synthèse d'informations</li>
+                      <li>Rédaction structurée et argumentée</li>
+                      <li>Publication et gestion de contenu web</li>
+                      <li>Communication digitale</li>
+                    </ul>
+                  </div>
+                  
+                  <a href="https://resonance-angers.fr/quand-les-joueurs-soufflent-le-show/" class="btn btn--med btn--theme dynamicBgClr" target="_blank" style="margin-top: 2rem;">Lire l'article</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 8rem; text-align: center;">
+          <h3 class="heading-sm" style="margin-bottom: 2rem; color: #282828;">Projet personnel en cours</h3>
+          <p style="font-size: 1.8rem; color: #666; max-width: 80rem; margin: 0 auto; line-height: 1.7;">
+            Je travaille actuellement sur un projet de jeu de rôle complet incluant un site web interactif et un bot Discord. 
+            Ce projet combine mes passions pour le développement web, les jeux et la création de communautés en ligne.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm"><span>Social</span></h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jules-pigné-5448021a9/">
+                <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn" />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/JohnPingu">
+                <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="GitHub" />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://x.com/PigneJules">
+                <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="Twitter" />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/jules.pigne.9/">
+                <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Jules PIGNÉ</h4>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script>
+      function toggleProject(btn, projectId) {
+        const details = document.getElementById(projectId + '-details');
+        const isExpanded = details.classList.contains('expanded');
+        
+        if (isExpanded) {
+          details.classList.remove('expanded');
+          btn.textContent = 'Voir les détails';
+        } else {
+          details.classList.add('expanded');
+          btn.textContent = 'Masquer les détails';
+        }
+      }
+    </script>
+  </body>
+</html>
